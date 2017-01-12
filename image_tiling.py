@@ -72,7 +72,7 @@ def slice(im, number_tiles, save=True):
 # Main code starts here
 
 # Input image to be slpit
-INPUT = 'data/image.jpg'
+INPUT = 'image.jpg'
 
 # This folder contains sub-images
 FOLDER = 'composite'
