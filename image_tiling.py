@@ -93,7 +93,6 @@ for fn in os.listdir(FOLDER):
 	im = Image.open(FILENAME)
 	color_dict[get_average_color(im)] =im
 	
-
 input_im  = Image.open(INPUT)
 x,y = input_im.size
 input_resized = input_im.resize((x*ratio,y*ratio))
@@ -102,7 +101,6 @@ tiles=slice(input_resized,int(parts),False)
 
 # Replace each tile with a close match
 for tile in tiles:
-
 	(r, g, b) = get_average_color( tile.image)
 	
 	# TODO: Find better way to calc euclidean distance
